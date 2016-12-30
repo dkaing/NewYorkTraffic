@@ -10,7 +10,7 @@ After the data is loaded into R, the dimension of the dataset is explored. A his
 ![](http://i.imgur.com/XkY99gz.png)
 ![](http://i.imgur.com/ehPZiOm.png)
 
-Other attributes of the data are also explored. The mean and median by hours (Figure 3) are also explored and the analysis shows that at 5 and 6 am, the trip distances appear to be the longest. Activities in the JFK region is also examined. A scatter plot of trip distance and fare amount (Figure 4) shows that some fare amounts are zero and some are negative values. These are possible outliers in the data. The mean of the distances with and without the outliers were computed. With the outliers, the mean of fare amount is $49.02 and without, it is $52. It is likely that the true value is $52 as the fare amounts without the outlers are all $52. Another interesting finding is that the fare amount for JFK region is fixed irrespective of the trip distance. Another interesting finding was that for the tip by trip distance plot (Figure 5), there are a few high tips when the distance is zero. Again, these values can be the outliers. There's also no correlation between trip distance and tip. It appears to average a certain value for all trip distances. Lastly, it was interesting to observe that the busiest times for JFK region (Figure 6) is 18 (6 pm) and 17 (5 pm).
+Other attributes of the data were also explored. The mean and median by hours (Figure 3) were also explored and the analysis shows that at 5 and 6 am, the trip distances appear to be the longest. Activities in the JFK region were also examined. A scatter plot of trip distance and fare amount (Figure 4) shows that some fare amounts are zero and some are negative values. These are possible outliers in the data. The mean of the distances with and without the outliers were computed. With the outliers, the mean of fare amount is $49.02 and without, it is $52. It is likely that the true value is $52 as the fare amounts without the outlers are all $52. Another interesting finding is that the fare amount for JFK region is fixed irrespective of the trip distance. Another interesting finding is that for the tip by trip distance plot (Figure 5), there are a few high tips where the distance is zero. Again, these values could be the outliers. There's also no correlation between trip distance and tip. It appeared to average a certain value for all trip distances. Lastly, it was interesting to observe that the busiest times for JFK region (Figure 6) is 18 (6 pm) and 17 (5 pm).
 
 ![](http://i.imgur.com/ISqhFdg.png)
 ![](http://i.imgur.com/Xo6z6LE.png)
@@ -18,7 +18,7 @@ Other attributes of the data are also explored. The mean and median by hours (Fi
 ![](http://i.imgur.com/9uD1pFa.png)
 
 ## Predictive Modeling
-To predict the tip to fare ratio. I first build a derived variable titled "tipfare." Afterwards, I filtered out factor variables. A correlation matrix was also performed to examine possible correlation to tipfare. For efficiency, a small sample of the data was extracted and modeled, the most associated variables can then be extracted from this model. With the highly correlated variables, the linear model (titled "model") was built with interaction terms. The R squared for this model is 0.7722.
+To predict the tip to fare ratio. I first built a derived variable titled "tipfare." Afterwards, I filtered out factor variables. A correlation matrix was also performed to examine possible correlation to tipfare. For efficiency, a small sample of the data was extracted and modeled, the most associated variables can then be extracted from this model. With the highly correlated variables, the linear model was built with interaction terms. The R squared for this model is 0.7722.
 
 ## Visualization
 ### Preprocessing
@@ -33,7 +33,7 @@ Figure 8 and Figure 9 show the pick-up and drop-off regions in New York. As show
 ![](http://i.imgur.com/EGuKJoL.png)
 ![](http://i.imgur.com/8AwJKg8.png)
 
-The number of pick and drop off region by community districts is also explored. Here, it shows that the number of pick up's are greater and more concentrated than the number of drop offs.
+The number of pick and drop off region by community districts is also explored. Here, it shows that the number of pick up's is greater and more concentrated than the number of drop offs.
 
 ![](http://i.imgur.com/xEfis6D.png)
 
